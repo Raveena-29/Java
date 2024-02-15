@@ -33,6 +33,51 @@ public class JavaBasics {
 ```
 >OUTPUT : Hello World!
 
+## OPERATORS IN JAVA
+
+### TYPES OF OPERATORS
+- Arithmatic operators (Binary , Unary, Ternary)
+  - Binary : atleast 2 oprands
+  - Unary : 1 oprand
+    - Increment
+      - Pre increment : ++a
+      - Post increment : a++
+    - Decrement
+- Relational operators
+- Logical operators
+- Bitwise operators
+- Assignment operators
+
+### ARITHMETIC OPERATORS
+|Binary|Unary|
+|---|---|
+|+ (Addition)|++ (Increment operator)|
+|- (Subraction)|-- (Decrement operator)|
+|* (Multiplication)||
+|/ (Division)||
+|% (Modulo)||
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # PROGRAM QUESTIONS
 ## VARIABLES & DATA TYPES QUESTIONS
 <br>
