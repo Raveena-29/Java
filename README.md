@@ -61,23 +61,6 @@ public class JavaBasics {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # PROGRAM QUESTIONS
 ## VARIABLES & DATA TYPES QUESTIONS
 <br>
