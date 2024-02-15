@@ -37,7 +37,7 @@ public class JavaBasics {
 ## VARIABLES & DATA TYPES QUESTIONS
 <br>
 
-### Question1:
+### Question 1:
 **In a program, input 3 numbers: A, B and C. You have to output the average of these 3 numbers. <br>(Hint : Average of N numbers is sum of those numbers divided by N)<br>**
 **Program:**
 ```
@@ -75,7 +75,7 @@ public class JavaBasics{
 >The average is :3.6666667
 ---
 
-### Question2:
+### Question 2:
 **In a program, input the side of a square. You have to output the area of the square.<br>(Hint : area of a square is (side x side)) <br>**
 **Program**
 ```
@@ -99,7 +99,7 @@ public class JavaBasics{
 >The area of a square with side 6.5 is 42.25
 ---
 
-### Question3: 
+### Question 3: 
 **Enter cost of 3 items from the user (using float data type) - a pencil, a pen and an eraser. You have to output the total cost of the items back to the user as their bill. <br> (Add on : You can also try adding 18% gst tax to the items in the bill as an advanced problem) <br>**
 **Program**
 ```
@@ -137,13 +137,19 @@ public class JavaBasics{
 ---
 
 ### Question 4:
-**What will be the type of result in the following Java code?** <br>
+
+**What will be the type of result in the following Java code?** 
+<br>
+
 ![Ques1](https://github.com/Raveena-29/Java/assets/148243757/5f11dd17-e059-4f0c-980f-a3ea310efe0a)
+
 <br>
-**(Hint : Look at the largest data type among these)<br>**
-**Solution**
-<br>
+
+**(Hint : Look at the largest data type among these)** <br>
+
+**Solution**  <br>
 In the mentioned code, the result variable will be of double type because oftype conversion.
+
 --- 
 
 ### Question 5: 
