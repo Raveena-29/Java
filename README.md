@@ -187,3 +187,96 @@ int int$=24;
 ```
 **Solution**<br>
 No, the statement will not give any error.Names of variables are called identifiers in Java. Identifier rule says, identifier scan start with any alphabet or underscore (“_”) or dollar (“$”). According to the rule the given variable name is a valid identifier.
+
+### Question 6:
+**Write a Java program to get a number from the user and print whether it is positive or negative.** <br>
+**Solution**
+```
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter any number : ");
+        int num = sc.nextInt();
+        sc.close();
+        if(num>=0){
+            System.out.println("Number is positive.");
+        }
+        else{
+            System.out.println("Number is negative.");
+        }
+    }
+}
+```
+>OUTPUT: <br>
+>Enter any number : -8 <br>
+>Number is negative.
+---
+###   Question 7:
+**Finish the following code so that it prints "You have a fever" if your temperature is above 100 and otherwise prints "You don't have a fever".** <br>
+```
+public class JavaBasics{
+    public static void main(String args[]){
+        double temp=103.5;
+    }
+}
+```
+**Solution**
+```
+public class JavaBasics{
+    public static void main(String args[]){
+        double temp=103.5;
+        if(temp>=100){
+            System.out.print("You have a fever!");
+        }
+        else{
+            System.out.println("You don't have a fever.");
+        }
+    }
+}
+```
+>**OUTPUT :** <br>
+>You have a fever!
+---
+### Question 8:
+**Write a Java program to input week number(1-7) and print day of week name using switch case.**
+**Solution**
+```
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter week number (1-7) :");
+        int day=sc.nextInt();
+        sc.close();
+        switch (day) {
+            case 1:
+                System.out.println("MONDAY");
+                break;
+            case 2:
+                System.out.println("TUESDAY");
+                break;
+            case 3:
+                System.out.println("WEDNESDAY");
+                break;
+            case 4:
+                System.out.println("THURSDAY");
+                break;
+            case 5:
+                System.out.println("FRIDAY");
+                break;
+            case 6:
+                System.out.println("SATURDAY");
+                break;
+            case 7:
+                System.out.println("SUNDAY");
+                break;
+            default:
+                throw new AssertionError();
+        }
+    }
+}
+```
+>**OUTPUT :** <br>
+>Enter week number (1-7) :5 <br>
+>FRIDAY
