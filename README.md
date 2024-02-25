@@ -280,3 +280,163 @@ public class JavaBasics{
 >**OUTPUT :** <br>
 >Enter week number (1-7) :5 <br>
 >FRIDAY
+---
+### Question 9:
+**What will be the value of x & y in thefollowing program?** <BR>
+```
+public class JavaBasics{
+    public static void main (String args[]){
+        int a =63,b=36;
+        boolean x= (a<b)?true:false;
+        int y= (a>b)?a:b;
+        System.out.println(x);
+        System.out.println(y);
+    }
+}
+```
+**Solution :**  <br>
+x -> False  <br>
+y -> 63
+
+---
+### Question 10:
+**Write a Java program that takes a year from the user and print whether that year is a leap year or not.** <br>
+**Solution** <br>
+```
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a year : ");
+        int year=sc.nextInt();
+        boolean x= (year%4)==0;
+        boolean y= (year%100)!=0;
+        boolean z= (year%400)==0;
+        if((x&&y)||z){
+            System.out.println(year+" is a leap year.");
+        }
+        else{
+            System.out.print(year+" is not a leap year.");
+        }
+    }
+}
+```
+---
+### Question 11:
+**Print number from 1 to 10.** <br>
+**Solution** <br> 
+```
+public class JavaBasics{
+    public static void main(String args[]){
+        int count=1;
+        while(count<=10){
+            System.out.println(count);
+            count++;
+        }
+    }
+}
+```
+---
+### Question 12:
+**Print number from 1 to nth (Take n through keyboard).** <br>
+**Solution**
+```
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        int count=1;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter nth digit to print counting from 1 to n : ");
+        int n =sc.nextInt();
+        while(count<=n){
+            System.out.println(count);
+            count++;
+        }
+    }
+}
+```
+---
+### Question 13:
+**Print sum of first n natural numbers.** <br>
+**Solution**<br>
+```
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        int count=1;
+        int sum=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter nth digit : ");
+        int n =sc.nextInt();
+        while(count<=n){
+            sum+=count;
+            count++;
+        }
+        System.out.println(sum);
+    }
+}
+```
+---
+### Question 14:
+**Print the given star pattern: <br> ****<br>****<br>****<br>****<br>** <br>
+**Solution**
+```
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of star in a side of the square pattern :");
+        int n = sc.nextInt();
+        for(int i=0;i<n;i++){
+            for(int j=1;j<n;j++){
+                System.out.print("*");
+            }
+        System.out.println("*");
+        }
+    }
+}
+```
+### Question 15:
+**Write a program to print n number in reverse order.** <br>
+**Solution :**
+```
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String args[]){
+        Scanner sc=  new Scanner(System.in);
+        System.out.println("Enter any number : ");
+        int n =sc.nextInt();
+        System.out.println("The reverse of the number :");
+        while(n>0){
+            int remainder=n%10;
+            System.out.print(remainder);
+            n/=10;
+        }
+    
+    }
+}
+```
+>**OUTPUT :** <br>
+>Enter any number :  <br>
+>123 <br>
+>The reverse of the number : <br>
+>321
+---
+### Question 16:
+**Write a program to print the reverse of a given number.**
+```
+public class JavaBasics{
+    public static void main(String args[]){
+        int num=1475902;
+        int rev=0;
+        while(num>0){
+            int remainder=num%10;
+            rev=(rev*10)+remainder;
+            num/=10;
+        }
+    System.out.println("The reverse order of the number is "+rev);
+    }
+}
+```
+>**OUTPUT :** <br>
+>The reverse order of the number is 2095741
