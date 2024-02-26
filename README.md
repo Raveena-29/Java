@@ -440,3 +440,51 @@ public class JavaBasics{
 ```
 >**OUTPUT :** <br>
 >The reverse order of the number is 2095741
+---
+### QUESTION 17: 
+**Take a number as input from the user and keep printing it until the number is a multiple of 10.** <br>
+**Solution**
+```
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String[] args){
+        Scanner sc =new Scanner(System.in);
+        do{
+            System.out.print("Enter any digit :");
+            int num=sc.nextInt();
+            if(num%10==0){
+                break;
+            }
+            else{
+                System.out.println(num);
+            }
+        }while(true);
+        sc.close();
+    }
+}
+```
+---
+### QUESTION 18:
+**Take a number as input from the user and keep printing it.Skip the number if it is a multiple of 10.** <br>
+**Solution**
+```
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String[] args){
+        Scanner sc =new Scanner(System.in);
+        do{
+            System.out.print("Enter any digit :");
+            int num=sc.nextInt();
+            if(num%10==0){
+                continue;
+            }
+            else{
+                System.out.println(num);
+            }
+        }while(true);
+    }
+}
+```
+### QUESTION 19:
+**** <br>
+**Solution** 
