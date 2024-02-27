@@ -485,6 +485,110 @@ public class JavaBasics{
     }
 }
 ```
+---
 ### QUESTION 19:
-**** <br>
+**Check whether a number is prime or not** <br>
 **Solution** 
+```
+import java.util.*;
+public class JavaBasics{
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter your number : ");
+        int n=sc.nextInt();
+
+        boolean isPrime=true;
+        if(n==2){
+            System.out.println(n+" is a prime number.");
+        }
+        else if(n==1){
+            System.out.println(n+" is not a prime number.");
+        }
+        else{
+            for (int i = 2; i <=Math.sqrt(n); i++) { 
+                if(n%i==0){
+                    isPrime=false;
+                }
+            }
+        
+            if(isPrime==true){
+                System.out.println(n+" is a prime number");
+            }
+            else{
+                System.out.println(n+" is not a prime number.");
+            }
+        }
+    }
+}
+```
+---
+### QUESTION 20: 
+**Write a program that reads a set of integers, and then prints the sum of the even and odd integers.** <br>
+**Solution**
+```
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the no. of integer element in your set:");
+        int n =sc.nextInt();
+        int even=0;
+        int odd=0;
+
+
+        for (int i=1;i<=n;i++){
+            System.out.println("Enter the number:");
+            int integers=sc.nextInt();
+            System.out.println("Your number is :"+integers);
+            if (integers%2==0){
+                even+=integers;
+            }
+            else{
+                odd+=integers;
+            }
+        }
+        System.out.println("The sum of even integers: "+even);
+        System.out.println("The sum of odd integers: "+odd);
+    }
+}
+```
+---
+### QUESTION 21
+**Write a program to find the factorialof any number entered by the user.** <br>
+**Solution:**
+```
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String[]args) {
+        Scanner sc=new Scanner(System.in);
+        int num;// To hold number
+        int fact=1;// To hold factorial
+        System.out.print("Enter any positive integer:");
+        num=sc.nextInt();   
+        for(int i=1;i<=num;i++) {  
+            fact*=i; 
+        }
+        System.out.println("Factorial: "+fact);
+    }
+}
+```
+---
+### QUESTION 22
+**Write a program to print the multiplication table of a number N, entered by the user.** <br>
+**Solution:**
+```
+import java.util.Scanner;
+public class JavaBasics{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your number: ");
+        int num = sc.nextInt();
+        for (int i=1;i<=10;i++){
+            int multi=num*i;
+            System.out.println(num+" X "+i+" = "+multi);
+        }
+    }
+}
+```
+### QUESTION 23
+****
